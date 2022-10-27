@@ -1,0 +1,421 @@
+/* Mobile and Core Styles */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer,
+main > section {
+  border: 1px solid;
+}
+
+nav,
+footer {
+  height: 50px;
+}
+
+main > section {
+  height: 300px;
+}
+
+/* Navbar */
+
+nav {
+  position: relative;
+  background-color: #333333;
+}
+
+nav ul {
+  display: none;
+}
+
+nav label {
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.leftbar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  transition: left 0.5s ease-in-out;
+  z-index: 1;
+  left: -100%;
+  top: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  color: white;
+
+  margin-top: 70px;
+  padding-left: 0;
+}
+.menu > li {
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.menu > li:hover {
+  background: #ccc;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu > li:hover a {
+  color: black;
+}
+
+.exit {
+  cursor: pointer;
+  font-weight: 800;
+  color: white;
+  float: right;
+  padding: 1.1rem;
+}
+
+#toggle:checked ~ .leftbar {
+  left: 0;
+}
+
+#toggle {
+  display: none;
+}
+/* ***************************** */
+/* Header*/
+header {
+  height: 440px;
+  color: white;
+  text-align: center;
+  border: 2px solid;
+  background-color: #333333;
+}
+
+#showcase {
+  border: 1px solid black;
+  position: relative;
+}
+
+.content-wrap {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-wrap p {
+  font-size: 18px;
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 1px solid #666;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.bg-video {
+  width: 100%;
+  filter: brightness(60%);
+  z-index: -1;
+}
+
+#video-bg-elem {
+  width: 100%;
+}
+
+/* **********section A****************** */
+/* main */
+
+main {
+  position: relative;
+}
+
+.section-a {
+  background: #eaeaea;
+  color: black;
+  padding-bottom: 2rem;
+  z-index: 3;
+  text-align: center;
+  padding: 20px;
+  height: 60rem;
+}
+
+.content-title {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.content-text > p {
+  line-height: 2rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+.front {
+  height: 500px;
+  margin: 8rem 12rem;
+  position: absolute;
+  width: 252px;
+  transform-origin: left center;
+  transition: transform 0.5s ease-in-out, box-shadow 0.35s ease-in-out;
+  left: 1.3rem;
+  top: 15rem;
+}
+
+.back {
+  height: 500px;
+  margin: 8rem 12rem;
+  position: absolute;
+  width: 252px;
+  transform-origin: left center;
+  left: 1.3rem;
+  top: 15rem;
+}
+
+.book-title:hover .front {
+  transform: rotateY(70deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+/* =============section-b========================== */
+
+.section-b {
+  height: auto;
+  background-color: #3f3d3d;
+}
+
+.section-b img {
+  width: 100%;
+}
+
+.web-dev,
+.mobile,
+.tech {
+  margin: 2rem 1rem;
+  background-color: white;
+}
+
+.twice {
+  height: 15rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.twice,
+p {
+  margin: 1rem 2rem;
+  line-height: 2rem;
+}
+
+/* =============section-c========================== */
+.section-c {
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 3rem;
+  background-color: white;
+  box-shadow: inset 5px 0px 5px rgb(183, 180, 180);
+}
+
+.section-c p {
+  margin-top: 2rem;
+  width: 80%;
+  margin-left: 5rem;
+}
+
+/* =============section-d========================== */
+.section-d {
+  height: auto;
+}
+
+.section-d-contact {
+  height: 18rem;
+  background-color: #2d90d4;
+  color: white;
+  text-align: center;
+}
+
+.section-d-contact h2,
+.section-d-about h2 {
+  padding-top: 3rem;
+}
+.section-d-contact p,
+.section-d-about p {
+  margin-bottom: 3rem;
+}
+
+.section-d-about {
+  height: 15rem;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+
+/* =============footer========================== */
+.footer {
+  border: 2px solid black;
+  background-color: black;
+  height: 6rem;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.crtil {
+  color: #2d90d4;
+}
+
+button {
+  border: 2px solid green;
+  background-color: green;
+  border-radius: 50%;
+  color: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 35rem;
+  font-size: 20px;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
+
+/************************Desktop************************/
+@media (min-width: 700px) {
+  .menu-button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+  }
+  .content-text {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+  }
+  .content-text p {
+    width: 50%;
+  }
+
+  .content-wrap {
+    width: 40%;
+  }
+
+  /* ========section-a==================== */
+
+  .content-text > p {
+    line-height: 2rem;
+    font-size: 18px;
+    text-align: center;
+    width: 30rem;
+  }
+  .front,
+  .back {
+    left: 40rem;
+  }
+
+  /* ========section-b==================== */
+
+  .section-b {
+    background-color: #3f3d3d;
+    height: 40rem;
+  }
+
+  .three-skills {
+    display: flex;
+    margin: 2rem 30rem;
+  }
+  .web-dev,
+  .mobile,
+  .tech {
+    margin: 1rem 0.5rem;
+    background-color: white;
+    height: 35rem;
+  }
+
+  .section-b img {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .twice {
+    height: 15rem;
+    text-align: center;
+    margin-top: 1rem;
+    width: 80%;
+  }
+
+  /* ========section-c==================== */
+
+  .section-c p {
+    width: 35%;
+    margin: 3rem auto;
+  }
+
+  /* ========section-d==================== */
+
+  .section-d {
+    display: flex;
+    height: 20rem;
+  }
+
+  .section-d-contact,
+  .section-d-about {
+    width: 50%;
+    height: auto;
+  }
+
+  .section-d-contact p,
+  .section-d-about p {
+    width: 85%;
+  }
+
+  /* ========footer==================== */
+
+  .footer {
+    display: flex;
+    font-size: 15px;
+    padding-top: 2rem;
+    justify-content: space-around;
+  }
+}
+
+/************************Desktop************************/
